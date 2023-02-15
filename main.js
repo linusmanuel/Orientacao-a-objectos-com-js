@@ -10,6 +10,13 @@ class ContaCorrente {
 	sacar(valor) {
 		if (this.saldo >= valor) this.saldo -= valor;
 	}
+
+	depositar(valor) {
+		const isPositive = valor > 0;
+		if (isPositive) {
+			this.saldo += valor;
+		}
+	}
 }
 
 const cliente1 = new Cliente();
@@ -25,6 +32,9 @@ console.log(cliente2);
 const contaCorrenteLinus = new ContaCorrente();
 contaCorrenteLinus.agencia = 1001;
 contaCorrenteLinus.saldo = 100;
+contaCorrenteLinus.depositar(100);
+contaCorrenteLinus.depositar(100);
+contaCorrenteLinus.depositar(-1);
 
 console.log(`Saldo: ${contaCorrenteLinus.saldo}`);
 contaCorrenteLinus.sacar(50);
