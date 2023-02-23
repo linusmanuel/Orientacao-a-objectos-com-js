@@ -1,3 +1,6 @@
+import { Cliente } from './Cliente.js';
+import { ContaCorrente } from './ContaCorrente.js';
+
 const contaCorrenteLinus = new ContaCorrente();
 contaCorrenteLinus._agencia = 1001;
 contaCorrenteLinus.depositar(150);
