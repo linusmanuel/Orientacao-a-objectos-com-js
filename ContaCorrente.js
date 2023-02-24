@@ -1,7 +1,19 @@
+import { Cliente } from './Cliente';
+
 export class ContaCorrente {
 	agencia;
 	conta;
 
+	set cliente(novoValor) {
+		if (novoValor instanceof Cliente) {
+			this._cliente = novoValor;
+		}
+	}
+
+	get cliente() {
+		return this.cliente;
+	}
+	_cliente;
 	_saldo = 0;
 
 	sacar(valor) {

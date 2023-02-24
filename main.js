@@ -10,7 +10,7 @@ cliente2.nome = 'Ricardo';
 cliente2.cpf = '1234';
 
 const contaCorrenteLinus = new ContaCorrente();
-contaCorrenteLinus.conta = cliente1;
+contaCorrenteLinus.cliente = cliente1;
 contaCorrenteLinus.depositar(500);
 
 const contaCorrenteRicardo = new ContaCorrente();
