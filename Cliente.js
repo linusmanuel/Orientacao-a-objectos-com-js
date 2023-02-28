@@ -1,12 +1,12 @@
 export class Cliente {
 	nome;
-	_cpf;
+	_bi;
 
 	get cpf() {
 		return this._cpf;
 	}
-	constructor(nome, cpf) {
+	constructor(nome, bi) {
 		this.nome = nome;
-		this.cpf = cpf;
+		this._bi = bi;
 	}
 }
